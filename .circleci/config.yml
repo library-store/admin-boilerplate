@@ -32,6 +32,6 @@ jobs:
             - node_modules
       - run: yarn test
       - run: yarn run production
-      - run: cp .env.example .env
+      - run: cp .env .env
       - run: php artisan key:generate
       - run: ./vendor/bin/phpunit

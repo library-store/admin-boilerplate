@@ -38,11 +38,11 @@ return [
         'name' => 'Alle Verzeichnisse haben die richtigen Berechtigungen',
     ],
     'env_file_exists' => [
-        'message' => 'Die .env Datei existiert nicht. Bitte kopiere die Datei .env.example zu .env und passe diese entsprechend an.',
+        'message' => 'Die .env Datei existiert nicht. Bitte kopiere die Datei .env zu .env und passe diese entsprechend an.',
         'name' => 'Die Umgebungsvariablendatei existiert',
     ],
     'example_environment_variables_are_set' => [
-        'message' => 'Folgende Umgebungsvariablen fehlen im .env Umgebungsfile, sind aber in .env.example definiert:' . PHP_EOL . ':variables',
+        'message' => 'Folgende Umgebungsvariablen fehlen im .env Umgebungsfile, sind aber in .env definiert:' . PHP_EOL . ':variables',
         'name' => 'Die Beispiel-Umgebungsvariablen sind gesetzt',
     ],
     'migrations_are_up_to_date' => [

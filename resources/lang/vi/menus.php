@@ -15,7 +15,7 @@ return [
 
     'backend' => [
         'access' => [
-            'title' => 'Access',
+                'title' => 'Thành viên',
 
             'roles' => [
                 'all'        => 'All Roles',
@@ -38,21 +38,21 @@ return [
         ],
 
         'log-viewer' => [
-            'main'      => 'Log Viewer',
-            'dashboard' => 'Dashboard',
-            'logs'      => 'Logs',
+            'main'      => 'Nhật ký hoạt động',
+            'dashboard' => 'Bảng điều khiển',
+            'logs'      => 'Hoạt động',
         ],
 
         'sidebar' => [
             'dashboard' => 'Dashboard',
             'general'   => 'General',
-            'history'   => 'History',
-            'system'    => 'System',
+            'history'   => 'Lịch sử',
+            'system'    => 'Hệ thông',
         ],
     ],
 
     'language-picker' => [
-        'language' => 'Language',
+        'language' => 'Ngôn ngữ',
         /*
          * Add the new language to this array.
          * The key should have the same language code as the folder name.
