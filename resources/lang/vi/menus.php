@@ -47,7 +47,7 @@ return [
             'dashboard' => 'Dashboard',
             'general'   => 'General',
             'history'   => 'Lịch sử',
-            'system'    => 'Hệ thông',
+            'system'    => 'Hệ thống',
         ],
     ],
 

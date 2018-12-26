@@ -190,6 +190,7 @@ return [
                     'name'             => 'Tên sản phẩm',
                     'excerpt'          => 'Mô tả ngắn',
                     'content'          => 'Nội dung',
+                    'excerpt'          => 'Mô tả ngắn',
                     'category'         => 'Danh mục',
                     'meta_title'       => 'Meta title',
                     'meta_keywords'    => 'Meta keywords',
