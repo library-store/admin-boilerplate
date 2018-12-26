@@ -112,7 +112,7 @@ return [
     'unique'               => 'The :attribute has already been taken.',
     'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'The :attribute format is invalid.',
-    'uuid' => 'The :attribute must be a valid UUID.',
+    'uuid'                 => 'The :attribute must be a valid UUID.',
 
     /*
     |--------------------------------------------------------------------------
@@ -145,7 +145,7 @@ return [
     'attributes' => [
 
         'backend' => [
-            'access' => [
+            'access'  => [
                 'permissions' => [
                     'associated_roles' => 'Associated Roles',
                     'dependencies'     => 'Dependencies',
@@ -158,9 +158,9 @@ return [
                     ],
 
                     'name'       => 'Name',
-                    'first_name' => 'First Name',
-                    'last_name'  => 'Last Name',
-                    'system'     => 'System',
+                    'first_name' => 'Họ',
+                    'last_name'  => 'Tên',
+                    'system'     => 'Hệ thống',
                 ],
 
                 'roles' => [
@@ -170,20 +170,35 @@ return [
                 ],
 
                 'users' => [
-                    'active'                  => 'Active',
+                    'active'                  => 'Hoạt động',
                     'associated_roles'        => 'Associated Roles',
-                    'confirmed'               => 'Confirmed',
-                    'email'                   => 'E-mail Address',
-                    'name'                    => 'Name',
-                    'last_name'               => 'Last Name',
-                    'first_name'              => 'First Name',
+                    'confirmed'               => 'Xác nhận',
+                    'email'                   => 'Đại chỉ Email',
+                    'name'                    => 'Tên',
+                    'last_name'               => 'Họ',
+                    'first_name'              => 'Tên',
                     'other_permissions'       => 'Other Permissions',
-                    'password'                => 'Password',
-                    'password_confirmation'   => 'Password Confirmation',
-                    'send_confirmation_email' => 'Send Confirmation E-mail',
+                    'password'                => 'Mật khẩu',
+                    'password_confirmation'   => 'Xác nhận mật khẩu',
+                    'send_confirmation_email' => 'Gửi email xác thực',
                     'timezone'                => 'Timezone',
-                    'language'                => 'Language',
+                    'language'                => 'Ngôn ngữ',
                 ],
+            ],
+            'product' => [
+                'product'  => [
+                    'name'             => 'Tên sản phẩm',
+                    'excerpt'          => 'Mô tả ngắn',
+                    'content'          => 'Nội dung',
+                    'category'         => 'Danh mục',
+                    'meta_title'       => 'Meta title',
+                    'meta_keywords'    => 'Meta keywords',
+                    'meta_description' => 'Meta description',
+                ],
+                'category' => [
+
+                ]
+
             ],
         ],
 

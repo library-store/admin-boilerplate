@@ -14,30 +14,30 @@ return [
     */
 
     'general' => [
-        'all'     => 'All',
-        'yes'     => 'Yes',
-        'no'      => 'No',
-        'copyright' => 'Copyright',
-        'custom'  => 'Custom',
-        'actions' => 'Actions',
-        'active'  => 'Active',
-        'buttons' => [
+        'all'                => 'Tất cả',
+        'yes'                => 'Có',
+        'no'                 => 'Không',
+        'copyright'          => 'Copyright',
+        'custom'             => 'Custom',
+        'actions'            => 'Hành dộng',
+        'active'             => 'Hoạt động',
+        'buttons'            => [
             'save'   => 'Save',
             'update' => 'Update',
         ],
-        'hide'              => 'Hide',
-        'inactive'          => 'Inactive',
-        'none'              => 'None',
-        'show'              => 'Show',
-        'toggle_navigation' => 'Toggle Navigation',
-        'create_new'        => 'Create New',
+        'hide'               => 'Ẩn',
+        'inactive'           => 'Không hoạt động',
+        'none'               => 'None',
+        'show'               => 'Hiển thị',
+        'toggle_navigation'  => 'Toggle Navigation',
+        'create_new'         => 'Tạo mới',
         'toolbar_btn_groups' => 'Toolbar with button groups',
-        'more'              => 'More',
-        'none'              => 'None',
+        'more'               => 'Xem thêm',
+        'none'               => 'None',
     ],
 
     'backend' => [
-        'access' => [
+        'access'  => [
             'roles' => [
                 'create'     => 'Tạo vai trò',
                 'edit'       => 'Sửa vai trò',
@@ -60,7 +60,7 @@ return [
                 'create'              => 'Tạo thành viên mới',
                 'deactivated'         => 'Deactivated Users',
                 'deleted'             => 'Deleted Users',
-                'edit'                => 'Edit User',
+                'edit'                => 'Sửa thành viên',
                 'management'          => 'Quản lý thành viên',
                 'no_permissions'      => 'No Permissions',
                 'no_roles'            => 'No Roles to set.',
@@ -68,22 +68,22 @@ return [
                 'user_actions'        => 'User Actions',
 
                 'table' => [
-                    'confirmed'      => 'Confirmed',
-                    'created'        => 'Created',
-                    'email'          => 'E-mail',
-                    'id'             => 'ID',
-                    'last_updated'   => 'Last Updated',
-                    'name'           => 'Tên',
-                    'first_name'     => 'Họ',
-                    'last_name'      => 'Tên',
-                    'no_deactivated' => 'No Deactivated Users',
-                    'no_deleted'     => 'No Deleted Users',
+                    'confirmed'         => 'Confirmed',
+                    'created'           => 'Created',
+                    'email'             => 'E-mail',
+                    'id'                => 'ID',
+                    'last_updated'      => 'Last Updated',
+                    'name'              => 'Tên',
+                    'first_name'        => 'Họ',
+                    'last_name'         => 'Tên',
+                    'no_deactivated'    => 'No Deactivated Users',
+                    'no_deleted'        => 'No Deleted Users',
                     'other_permissions' => 'Other Permissions',
-                    'permissions'    => 'Permissions',
-                    'abilities'      => 'Abilities',
-                    'roles'          => 'Roles',
-                    'social'         => 'Social',
-                    'total'          => 'user total|users total',
+                    'permissions'       => 'Permissions',
+                    'abilities'         => 'Abilities',
+                    'roles'             => 'Roles',
+                    'social'            => 'Social',
+                    'total'             => 'user total|users total',
                 ],
 
                 'tabs' => [
@@ -94,25 +94,41 @@ return [
 
                     'content' => [
                         'overview' => [
-                            'avatar'       => 'Avatar',
-                            'confirmed'    => 'Confirmed',
-                            'created_at'   => 'Created At',
-                            'deleted_at'   => 'Deleted At',
-                            'email'        => 'E-mail',
+                            'avatar'        => 'Avatar',
+                            'confirmed'     => 'Confirmed',
+                            'created_at'    => 'Created At',
+                            'deleted_at'    => 'Deleted At',
+                            'email'         => 'E-mail',
                             'last_login_at' => 'Last Login At',
                             'last_login_ip' => 'Last Login IP',
-                            'last_updated' => 'Last Updated',
-                            'name'         => 'Name',
-                            'first_name'   => 'Họ',
-                            'last_name'    => 'Tên',
-                            'status'       => 'Status',
-                            'timezone'     => 'Timezone',
+                            'last_updated'  => 'Last Updated',
+                            'name'          => 'Name',
+                            'first_name'    => 'Họ',
+                            'last_name'     => 'Tên',
+                            'status'        => 'Status',
+                            'timezone'      => 'Timezone',
                         ],
                     ],
                 ],
 
                 'view' => 'View User',
             ],
+        ],
+        'product' => [
+            'product'  => [
+                'product'          => 'Sản phẩm',
+                'product_category' => 'Danh mục sản phẩm',
+                'name'             => 'Tên sản phẩm',
+                'category'         => 'Danh mục',
+                'management'       => 'Quản lý sản phẩm',
+                'create'           => 'Thêm sản phẩm',
+                'edit'             => 'Sửa sản phẩm',
+                'delete'           => 'Xóa sản phẩm'
+            ],
+            'category' => [
+
+            ]
+
         ],
     ],
 
@@ -129,15 +145,15 @@ return [
 
         'contact' => [
             'box_title' => 'Contact Us',
-            'button' => 'Send Information',
+            'button'    => 'Send Information',
         ],
 
         'passwords' => [
-            'expired_password_box_title' => 'Your password has expired.',
+            'expired_password_box_title'      => 'Your password has expired.',
             'forgot_password'                 => 'Forgot Your Password?',
             'reset_password_box_title'        => 'Reset Password',
             'reset_password_button'           => 'Reset Password',
-            'update_password_button'           => 'Update Password',
+            'update_password_button'          => 'Update Password',
             'send_password_reset_link_button' => 'Send Password Reset Link',
         ],
 

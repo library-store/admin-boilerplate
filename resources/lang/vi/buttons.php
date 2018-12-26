@@ -39,18 +39,18 @@ return [
     ],
 
     'general' => [
-        'cancel' => 'Cancel',
-        'continue' => 'Continue',
+        'cancel' => 'Hủy',
+        'continue' => 'Tiếp tục',
 
         'crud' => [
-            'create' => 'Create',
-            'delete' => 'Delete',
-            'edit'   => 'Edit',
-            'update' => 'Update',
-            'view'   => 'View',
+            'create' => 'Tạo mới',
+            'delete' => 'Xóa',
+            'edit'   => 'Sửa',
+            'update' => 'Cập nhật',
+            'view'   => 'Hiển thị',
         ],
 
-        'save' => 'Save',
-        'view' => 'View',
+        'save' => 'Lưu',
+        'view' => 'Hiển thị',
     ],
 ];

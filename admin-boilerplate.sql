@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2018-12-25 17:56:31
+Date: 2018-12-26 17:24:55
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -164,6 +164,26 @@ CREATE TABLE `permissions` (
 -- Records of permissions
 -- ----------------------------
 INSERT INTO `permissions` VALUES ('1', 'view backend', 'web', '2018-12-25 08:22:36', '2018-12-25 08:22:36');
+
+-- ----------------------------
+-- Table structure for product
+-- ----------------------------
+DROP TABLE IF EXISTS `product`;
+CREATE TABLE `product` (
+  `product_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) CHARACTER SET utf8 NOT NULL,
+  `content` longtext CHARACTER SET utf8,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`product_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of product
+-- ----------------------------
+INSERT INTO `product` VALUES ('1', 'aaaaaaaaaaaa', 'bbbbbbbbbbbbbb', '2018-12-26 09:54:08', '2018-12-26 09:54:08', null);
+INSERT INTO `product` VALUES ('2', 'Sản phẩm 2', 'Sản phẩm 2', '2018-12-26 10:24:11', '2018-12-26 10:24:11', null);
 
 -- ----------------------------
 -- Table structure for roles

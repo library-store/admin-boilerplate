@@ -34,6 +34,11 @@ return [
             'updated'             => 'The user was successfully updated.',
             'updated_password'    => "The user's password was successfully updated.",
         ],
+        'product' => [
+            'product' => [
+                'created' => 'Sản phẩm đã được thêm thành công'
+            ]
+        ]
     ],
 
     'frontend' => [
