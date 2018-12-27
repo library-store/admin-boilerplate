@@ -10,6 +10,25 @@
                 </a>
             </li>
 
+            <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/product*'), 'open') }}">
+                <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('admin/product*')) }}" href="#">
+                    <i class="nav-icon fa fa-cube fa-lg"></i> @lang('menus.backend.product.title')
+                </a>
+
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link {{ active_class(Active::checkUriPattern('admin/product/product*')) }}" href="{{ route('admin.product.product.index') }}">
+                            @lang('menus.backend.product.all_product')
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ active_class(Active::checkUriPattern('admin/auth/role*')) }}" href="{{ route('admin.auth.role.index') }}">
+                            @lang('labels.backend.access.roles.management')
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
             <li class="nav-title">
                 @lang('menus.backend.sidebar.system')
             </li>

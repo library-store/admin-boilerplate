@@ -17,7 +17,7 @@ return [
         'access' => [
             'users' => [
                 'activate'           => 'Activate',
-                'change_password'    => 'Change Password',
+                'change_password'    => 'Đổi mật khẩu',
                 'clear_session'         => 'Clear Session',
                 'confirm'             => 'Confirm',
                 'deactivate'         => 'Deactivate',
@@ -33,8 +33,8 @@ return [
 
     'emails' => [
         'auth' => [
-            'confirm_account' => 'Confirm Account',
-            'reset_password'  => 'Reset Password',
+            'confirm_account' => 'Xác nhận tài khoản',
+            'reset_password'  => 'Thiết lập lại mật khẩu',
         ],
     ],
 

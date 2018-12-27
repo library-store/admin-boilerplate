@@ -15,7 +15,7 @@ return [
 
     'backend' => [
         'access' => [
-                'title' => 'Thành viên',
+            'title' => 'Thành viên',
 
             'roles' => [
                 'all'        => 'All Roles',
@@ -44,11 +44,16 @@ return [
         ],
 
         'sidebar' => [
-            'dashboard' => 'Dashboard',
-            'general'   => 'General',
+            'dashboard' => 'Bảng tin',
+            'general'   => 'Tổng quan',
             'history'   => 'Lịch sử',
             'system'    => 'Hệ thống',
         ],
+
+        'product' => [
+            'title' => 'Sản phẩm',
+            'all_product' => 'Tất cả sản phẩm',
+        ]
     ],
 
     'language-picker' => [
@@ -59,9 +64,9 @@ return [
          * The string should be: 'Language-name-in-your-own-language (Language-name-in-English)'.
          * Be sure to add the new language in alphabetical order.
          */
-        'langs' => [
-            'en'    => 'English',
-            'vi'    => 'Việt Nam',
+        'langs'    => [
+            'en' => 'English',
+            'vi' => 'Việt Nam',
         ],
     ],
 ];

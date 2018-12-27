@@ -38,7 +38,7 @@
                                 <div class="col-md-12">
                                     {{ html()->textarea('content')
                                     ->id('product_content')
-                                        ->class('form-control')
+                                        ->class('form-control summernote')
                                         ->placeholder(__('validation.attributes.backend.product.product.excerpt')) }}
                                 </div><!--col-->
                             </div><!--form-group-->
@@ -49,7 +49,7 @@
                                 <div class="col-md-12">
                                     {{ html()->textarea('excerpt')
                                     ->id('product_excerpt')
-                                        ->class('form-control')
+                                        ->class('form-control summernote')
                                         ->placeholder(__('validation.attributes.backend.product.product.excerpt')) }}
                                 </div><!--col-->
                             </div><!--form-group-->
