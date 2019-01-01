@@ -23,6 +23,12 @@
 
     @stack('after-styles')
 
+    <style>
+        .note-editor .dropdown-toggle:after {
+            content: none;
+        }
+    </style>
+
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([

@@ -73,22 +73,24 @@
         </div>
         <div class="col-md-3">
             <div class="card">
+                <div class="card-header">
+                    {{ __('validation.attributes.backend.product.product.status') }}
+                </div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
                             <div class="row">
-                                {{ html()->label(__('validation.attributes.backend.product.product.name'))->class('col-md-12 form-control-label font-weight-bold')->for('name') }}
 
                                 <div class="col-md-12">
                                     <div>
                                         {{ html()->radio('active')->id('status_show')->value('true')->checked() }}
-                                        <label class="form-check-label" for="status_show">
+                                        <label class="form-check-label" for="status">
                                             Hiển thị
                                         </label>
                                     </div>
                                     <div>
                                         {{ html()->radio('active')->id('status_hide')->value('false') }}
-                                        <label class="form-check-label" for="status_hide">
+                                        <label class="form-check-label" for="status">
                                             Ẩn
                                         </label>
                                     </div>
@@ -98,6 +100,36 @@
                     </div>
                 </div>
             </div>
+
+            <div class="card">
+                <div class="card-header">
+                    {{ __('validation.attributes.backend.product.product.category') }}
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    <div>
+                                        {{ html()->radio('active')->id('status_show')->value('true')->checked() }}
+                                        <label class="form-check-label" for="status">
+                                            Hiển thị
+                                        </label>
+                                    </div>
+                                    <div>
+                                        {{ html()->radio('active')->id('status_hide')->value('false') }}
+                                        <label class="form-check-label" for="status">
+                                            Ẩn
+                                        </label>
+                                    </div>
+                                </div><!--col-->
+                            </div><!--form-group-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
