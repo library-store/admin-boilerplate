@@ -103,7 +103,7 @@
 
             <div class="card">
                 <div class="card-header">
-                    {{ __('validation.attributes.backend.product.product.category') }}
+                    Phân loại
                 </div>
                 <div class="card-body">
                     <div class="row">
@@ -111,17 +111,7 @@
                             <div class="row">
 
                                 <div class="col-md-12">
-                                    <div>
-                                        {{ html()->radio('active')->id('status_show')->value('true')->checked() }}
-                                        <label class="form-check-label" for="status">
-                                            Hiển thị
-                                        </label>
-                                    </div>
-                                    <div>
-                                        {{ html()->radio('active')->id('status_hide')->value('false') }}
-                                        <label class="form-check-label" for="status">
-                                            Ẩn
-                                        </label>
+
                                     </div>
                                 </div><!--col-->
                             </div><!--form-group-->
