@@ -73,6 +73,7 @@
         </div>
         <div class="col-md-3">
             <div class="card">
+
                 <div class="card-header">Hoạt động
                     <div class="card-header-actions">
                         <a class="card-header-action btn-minimize" href="#" data-toggle="collapse" data-target="#collapseStatus" aria-expanded="true">
@@ -110,6 +111,7 @@
                     </div>
                 </div>
             </div><!--product-classify-->
+
         </div>
 
     </div>
