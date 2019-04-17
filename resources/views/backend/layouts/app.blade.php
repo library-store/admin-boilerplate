@@ -19,6 +19,7 @@
     <!-- Check if the language is set to RTL, so apply the RTL layouts -->
     <!-- Otherwise apply the normal LTR layouts -->
     {{ style(mix('css/backend.css')) }}
+    {{ style('js/select2/select2.min.css') }}
     {{ style('js/summernote/summernote-lite.css') }}
 
     @stack('after-styles')
@@ -60,9 +61,13 @@
 
     <!-- Scripts -->
     @stack('before-scripts')
+
+
     {!! script(mix('js/manifest.js')) !!}
     {!! script(mix('js/vendor.js')) !!}
     {!! script(mix('js/backend.js')) !!}
+    {!! script('js/select2/select2.min.js') !!}
+
     {!! script('js/summernote/summernote-lite.js') !!}
     {!! script('js/summernote/plugin/specialchars/summernote-ext-specialchars.js') !!}
 

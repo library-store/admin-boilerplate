@@ -73,31 +73,43 @@
         </div>
         <div class="col-md-3">
             <div class="card">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col">
-                            <div class="row">
-                                {{ html()->label(__('validation.attributes.backend.product.product.name'))->class('col-md-12 form-control-label font-weight-bold')->for('name') }}
-
-                                <div class="col-md-12">
-                                    <div>
-                                        {{ html()->radio('active')->id('status_show')->value('true')->checked() }}
-                                        <label class="form-check-label" for="status_show">
-                                            Hiển thị
-                                        </label>
-                                    </div>
-                                    <div>
-                                        {{ html()->radio('active')->id('status_hide')->value('false') }}
-                                        <label class="form-check-label" for="status_hide">
-                                            Ẩn
-                                        </label>
-                                    </div>
-                                </div><!--col-->
-                            </div><!--form-group-->
-                        </div>
+                <div class="card-header">Hoạt động
+                    <div class="card-header-actions">
+                        <a class="card-header-action btn-minimize" href="#" data-toggle="collapse" data-target="#collapseStatus" aria-expanded="true">
+                            <i class="icon-arrow-up"></i>
+                        </a>
                     </div>
                 </div>
-            </div>
+                <div class="collapse show" id="collapseStatus" style="">
+                    <div class="card-body">
+                        <label class="switch switch-label switch-pill switch-primary mr-2" for="inputStatus">
+                            <input class="switch-input" type="checkbox" name="status" id="inputStatus" value="1">
+                            <span class="switch-slider" data-checked="Yes" data-unchecked="No"></span>
+                        </label>
+                    </div>
+                </div>
+            </div><!--product-status-->
+
+            <div class="card">
+                <div class="card-header">Phân loại
+                    <div class="card-header-actions">
+                        <a class="card-header-action btn-minimize" href="#" data-toggle="collapse" data-target="#collapseClassify" aria-expanded="true">
+                            <i class="icon-arrow-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse show" id="collapseClassify" style="">
+                    <div class="card-body">
+                        <label for="product_vendor" class="form-control-label">Nhà cung cấp</label>
+
+                        <select class="form-control js-example-tags">
+                            <option selected="selected">orange</option>
+                            <option>white</option>
+                            <option>purple</option>
+                        </select>
+                    </div>
+                </div>
+            </div><!--product-classify-->
         </div>
 
     </div>

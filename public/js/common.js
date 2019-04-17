@@ -66,4 +66,10 @@ $(document).ready(function () {
         }
     })
 
+
+    // Select2
+    $(".js-example-tags").select2({
+        tags: true
+    });
+
 });
