@@ -68,7 +68,11 @@ $(document).ready(function () {
 
 
     // Select2
-    $(".js-example-tags").select2({
+    $("#product_vendor").select2({
+        tags: true
+    });
+
+    $("#product_tags").select2({
         tags: true
     });
 

@@ -76,7 +76,8 @@
 
                 <div class="card-header">Hoạt động
                     <div class="card-header-actions">
-                        <a class="card-header-action btn-minimize" href="#" data-toggle="collapse" data-target="#collapseStatus" aria-expanded="true">
+                        <a class="card-header-action btn-minimize" href="#" data-toggle="collapse"
+                           data-target="#collapseStatus" aria-expanded="true">
                             <i class="icon-arrow-up"></i>
                         </a>
                     </div>
@@ -94,16 +95,89 @@
             <div class="card">
                 <div class="card-header">Phân loại
                     <div class="card-header-actions">
-                        <a class="card-header-action btn-minimize" href="#" data-toggle="collapse" data-target="#collapseClassify" aria-expanded="true">
+                        <a class="card-header-action btn-minimize" href="#" data-toggle="collapse"
+                           data-target="#collapseClassify" aria-expanded="true">
                             <i class="icon-arrow-up"></i>
                         </a>
                     </div>
                 </div>
+
                 <div class="collapse show" id="collapseClassify" style="">
                     <div class="card-body">
                         <label for="product_vendor" class="form-control-label">Nhà cung cấp</label>
 
-                        <select class="form-control js-example-tags">
+                        <select product_vendor class="form-control">
+                            <option selected="selected">orange</option>
+                            <option>white</option>
+                            <option>purple</option>
+                        </select>
+                    </div>
+
+                    <div class="card-body">
+                        <label class="form-control-label">Danh mục</label>
+
+                        <div id="product_cat-all">
+                            <ul id="product_catchecklist" class="list-group">
+                                <li id="product_cat-15" class="list-item d-flex">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                        <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                                    </div>
+                                </li>
+                                <li id="product_cat-15" class="list-item d-flex">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                        <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                                    </div>
+                                </li>
+                                <li id="product_cat-15" class="list-item d-flex">
+                                    <ul class="list-group children">
+                                        <li id="product_cat-15" class="list-item d-flex">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                                <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                                            </div>
+                                        </li>
+                                        <li id="product_cat-15" class="list-item d-flex">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                                <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="product_cat-15" class="list-item d-flex">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                        <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                                    </div>
+                                </li>
+                                <li id="product_cat-15" class="list-item d-flex">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                        <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                                    </div>
+                                </li>
+                                <li id="product_cat-15" class="list-item d-flex">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                        <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                                    </div>
+                                </li>
+                                <li id="product_cat-15" class="list-item d-flex">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                        <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <label for="product_tags" class="form-control-label">Nhà cung cấp</label>
+
+                        <select id="product_tags" class="form-control" multiple="multiple">
                             <option selected="selected">orange</option>
                             <option>white</option>
                             <option>purple</option>
