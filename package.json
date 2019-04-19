@@ -32,8 +32,7 @@
     "popper.js": "^1.12.4",
     "simple-line-icons": "^2.4.1",
     "sweetalert2": "^7.0.7",
-    "vue": "^2.5.17",
-    "select2": "~4.0"
+    "vue": "^2.5.17"
   },
   "jest": {
     "testURL": "http://localhost",
@@ -53,6 +52,6 @@
     }
   },
   "dependencies": {
-    "summernote-image-title": "^0.2.0"
+    "sortablejs": "^1.8.4"
   }
 }

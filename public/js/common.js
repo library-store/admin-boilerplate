@@ -66,26 +66,20 @@ $(document).ready(function () {
         }
     })
 
-
     // Select2
-    $(".js-example-tags").select2({
+    $("#product_vendor").select2({
         tags: true
     });
 
-    // Select2
-    $("#product_categories").select2({});
+    $("#product_tags").select2({
+        tags: true
+    });
 
-    axios.get('https://my-json-server.typicode.com/typicode/demo/posts')
-        .then(function (response) {
-            // handle success
-            console.log(response);
-        })
-        .catch(function (error) {
-            // handle error
-            console.log(error);
-        })
-        .then(function () {
-            // always executed
-        });
+    // Product gallery images
+    let product_gallery_images = document.getElementById('product_gallery_images');
+    new Sortable(product_gallery_images, {
+        swapThreshold: 1,
+        animation: 150
+    });
 
 });
