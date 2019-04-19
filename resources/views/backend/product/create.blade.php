@@ -109,6 +109,13 @@
                             <option>purple</option>
                         </select>
                     </div>
+
+                    <div class="card-body">
+                        <label for="product_categories" class="form-control-label">Danh mục sản phẩm</label>
+                        <select class="js-example-basic-multiple js-states form-control" id="product_categories" multiple="multiple">
+                            <option value="AZ">Arizona</option>
+                        </select>
+                    </div>
                 </div>
             </div><!--product-classify-->
 

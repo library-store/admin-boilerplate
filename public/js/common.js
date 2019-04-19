@@ -72,4 +72,20 @@ $(document).ready(function () {
         tags: true
     });
 
+    // Select2
+    $("#product_categories").select2({});
+
+    axios.get('https://my-json-server.typicode.com/typicode/demo/posts')
+        .then(function (response) {
+            // handle success
+            console.log(response);
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+        })
+        .then(function () {
+            // always executed
+        });
+
 });
