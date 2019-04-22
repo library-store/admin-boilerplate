@@ -6,6 +6,76 @@
   margin-left: 20px;
 }
 
+.howto {
+  color: #666;
+  font-style: italic;
+  display: block;
+}
+
+.hide-if-no-js{
+  display: none;
+}
+
+.card-header.custom {
+  background: #fff;
+}
+
+.form-product-data .nav .nav-link {
+  border-radius: 0px;
+  background-color: #fafafa;
+  border-right: 1px solid #eee;
+  color: #0073aa;
+}
+
+.form-product-data .nav .nav-link.active {
+  background-color: #eee;
+  color: #555;
+}
+
+.form-product-data .tab-content {
+  border: 0px !important;
+  margin: 0px;
+}
+
+.form-product-data .tab-content .tab-pane{
+  padding: 0px;
+}
+
+.image-openfilemanager-plus {
+  width: 106px;
+  height: 106px;
+  border: 1px solid #bbcdd2;
+  text-align: center;
+  color: #bbcdd2;
+  position: relative;
+  //display: inline-block;
+  vertical-align: top;
+}
+
+.image-openfilemanager-plus *{
+  cursor: default;
+}
+
+.image-openfilemanager-plus div {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 5px solid #bbcdd2;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.image-openfilemanager-plus div span {
+  text-align: center;
+  display: inline-block;
+  line-height: 33px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 700;
+}
 // Fix mobile footer
 .app-footer {
   flex: 0 0;
@@ -28,11 +98,12 @@
 }
 
 #product_gallery_images li.image {
-  width: 79px;
+  width: 106px;
+  height: 106px;
   float: left;
   cursor: move;
   border: 1px solid #d5d5d5;
-  margin: 9px 9px 0 0;
+  margin: 0px 9px 9px 0;
   background: #f7f7f7;
   border-radius: 2px;
   position: relative;
@@ -40,7 +111,7 @@
   list-style: none;
 }
 
-#product_gallery_images li:nth-child(4n) {
+#product_gallery_images li:nth-child(3n) {
   margin-right: 0px;
 }
 
@@ -76,6 +147,8 @@
   right: 0;
   z-index: 9;
   width: .8em;
+  background: #fff;
+  border-radius: 50px;
 }
 
 #product_gallery_images li.image:hover .actions{
@@ -84,4 +157,13 @@
 
 .add_product_images {
   margin: 1em 0;
+}
+
+#set-post-thumbnail-desc.howto {
+  margin-top: 7px;
+  margin-bottom: 0px;
+}
+
+#prod-thumbnail{
+  max-width: 200px;
 }

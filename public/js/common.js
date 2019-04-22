@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     // Define function to open filemanager window
     var lfm = function (options, cb) {
         var isMobile = false; //initiate as false
@@ -64,8 +63,41 @@ $(document).ready(function () {
             link: [],
             air: []
         }
-    })
+    });
 
+    $('#btn-add-prod-thumbnail, #prod-thumbnail').on('click', function(event){
+        event.preventDefault();
+
+        lfm({type: 'image', prefix: '/filemanager'}, function (imageUrl, path) {
+            $('#btn-add-prod-thumbnail').css('display', 'none');
+            $('#set-post-thumbnail-desc').css('display', 'block');
+            $('#remove-post-thumbnail').parent().css('display', 'block');
+            $('#prod-thumbnail').attr('src', imageUrl);
+            $('#prod-thumbnail').css('display', 'block');
+        });
+    });
+
+    $('#btn-add-prod-images').on('click', function(event){
+        event.preventDefault();
+
+        lfm({type: 'image', prefix: '/filemanager'}, function (imageUrl, path) {
+            var html = '<li class="image"> <img src="'+imageUrl+'"> <ul class="actions"><li><a href="#" class="delete" title="Xóa ảnh"><i class="fa fa-fw fa-times-circle"></i></a></li></ul> </li>';
+            $('#product_gallery_images').append(html);
+
+            $('#product_gallery_images .actions .delete').on('click', function (event) {
+                event.preventDefault();
+                $(this).parent().remove();
+            });
+        });
+    });
+
+    $('#product_gallery_images .actions .delete').on('click', function (event) {
+        event.preventDefault();
+        $(this).parent().remove();
+    });
+});
+
+$(document).ready(function () {
     // Select2
     $("#product_vendor").select2({
         tags: true
@@ -81,5 +113,4 @@ $(document).ready(function () {
         swapThreshold: 1,
         animation: 150
     });
-
 });

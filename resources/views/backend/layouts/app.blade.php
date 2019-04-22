@@ -15,13 +15,13 @@
 
     {{-- See https://laravel.com/docs/5.5/blade#stacks for usage --}}
     @stack('before-styles')
-
     <!-- Check if the language is set to RTL, so apply the RTL layouts -->
     <!-- Otherwise apply the normal LTR layouts -->
-    {{ style(mix('css/backend.css')) }}
+
     {{ style('js/select2/select2.min.css') }}
     {{ style('js/summernote/summernote-lite.css') }}
 
+    {{ style(mix('css/backend.css')) }}
     @stack('after-styles')
 
     <style>
