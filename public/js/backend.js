@@ -4593,6 +4593,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__coreui_coreui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__coreui_coreui__);
 
 
+window.Sortable = __webpack_require__("./node_modules/sortablejs/Sortable.js");
+
 /***/ }),
 
 /***/ "./resources/js/backend/before.js":

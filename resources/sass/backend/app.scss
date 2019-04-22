@@ -12,5 +12,9 @@
 // Import styles
 @import "~@coreui/coreui/scss/coreui";
 
+// Import custom type tag
+
+@import "custom_coreui_tag";
+
 // If you want to add something do it here
 @import "custom";

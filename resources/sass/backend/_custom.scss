@@ -1,9 +1,169 @@
 // Here you can add other styles
 @import '~simple-line-icons/scss/simple-line-icons';
 
+// Common css
+.list-group.children {
+  margin-left: 20px;
+}
+
+.howto {
+  color: #666;
+  font-style: italic;
+  display: block;
+}
+
+.hide-if-no-js{
+  display: none;
+}
+
+.card-header.custom {
+  background: #fff;
+}
+
+.form-product-data .nav .nav-link {
+  border-radius: 0px;
+  background-color: #fafafa;
+  border-right: 1px solid #eee;
+  color: #0073aa;
+}
+
+.form-product-data .nav .nav-link.active {
+  background-color: #eee;
+  color: #555;
+}
+
+.form-product-data .tab-content {
+  border: 0px !important;
+  margin: 0px;
+}
+
+.form-product-data .tab-content .tab-pane{
+  padding: 0px;
+}
+
+.image-openfilemanager-plus {
+  width: 106px;
+  height: 106px;
+  border: 1px solid #bbcdd2;
+  text-align: center;
+  color: #bbcdd2;
+  position: relative;
+  //display: inline-block;
+  vertical-align: top;
+}
+
+.image-openfilemanager-plus *{
+  cursor: default;
+}
+
+.image-openfilemanager-plus div {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 5px solid #bbcdd2;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.image-openfilemanager-plus div span {
+  text-align: center;
+  display: inline-block;
+  line-height: 33px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 700;
+}
 // Fix mobile footer
 .app-footer {
-    flex: 0 0;
-    padding-top: map-get($spacers, 3);
-    padding-bottom: map-get($spacers, 3);
+  flex: 0 0;
+  padding-top: map-get($spacers, 3);
+  padding-bottom: map-get($spacers, 3);
+}
+
+// Product
+#product_cat-all {
+  min-height: 42px;
+  max-height: 200px;
+  overflow: auto;
+  padding: 0 .9em;
+  border: solid 1px #ddd;
+  background-color: #fdfdfd;
+}
+
+#product_catchecklist {
+  margin: 0.9em 0px;
+}
+
+#product_gallery_images li.image {
+  width: 106px;
+  height: 106px;
+  float: left;
+  cursor: move;
+  border: 1px solid #d5d5d5;
+  margin: 0px 9px 9px 0;
+  background: #f7f7f7;
+  border-radius: 2px;
+  position: relative;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+#product_gallery_images li:nth-child(3n) {
+  margin-right: 0px;
+}
+
+#product_gallery_images li.image > img {
+  width: 100%;
+}
+
+#product_gallery_images li.image .actions {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 2px;
+  display: none;
+}
+
+#product_gallery_images li .actions li {
+  float: right;
+  margin: 0 0 0 2px;
+  list-style: none;
+}
+
+#product_gallery_images li .actions li a.delete {
+  display: block;
+  text-indent: -9999px;
+  height: 1em;
+  width: 1em;
+  font-size: 1.4em;
+}
+
+#product_gallery_images li .actions li a.delete .fa-times-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  width: .8em;
+  background: #fff;
+  border-radius: 50px;
+}
+
+#product_gallery_images li.image:hover .actions{
+  display: block;
+}
+
+.add_product_images {
+  margin: 1em 0;
+}
+
+#set-post-thumbnail-desc.howto {
+  margin-top: 7px;
+  margin-bottom: 0px;
+}
+
+#prod-thumbnail{
+  max-width: 200px;
 }
