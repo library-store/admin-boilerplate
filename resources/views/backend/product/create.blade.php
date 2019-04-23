@@ -332,7 +332,7 @@
             </div><!--Images-->
 
             <div class="card">
-                <div class="card-header custom">Album ảnh
+                <div class="card-header">Album ảnh
                     <div class="card-header-actions">
                         <a class="card-header-action btn-minimize" href="#" data-toggle="collapse"
                            data-target="#collapseImages" aria-expanded="true">

@@ -107,15 +107,19 @@
   background: #f7f7f7;
   border-radius: 2px;
   position: relative;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   list-style: none;
+  text-align: center;
+  line-height: 106px;
 }
 
 #product_gallery_images li:nth-child(3n) {
   margin-right: 0px;
 }
 
-#product_gallery_images li.image > img {
+#product_gallery_images li.image img {
+  max-width: 100%;
   width: 100%;
 }
 
@@ -131,6 +135,12 @@
   float: right;
   margin: 0 0 0 2px;
   list-style: none;
+}
+
+#product_gallery_images li.image > div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 #product_gallery_images li .actions li a.delete {

@@ -84,7 +84,7 @@ $(document).ready(function () {
         img_count++;
 
         lfm({type: 'image', prefix: '/filemanager'}, function (imageUrl, path) {
-            var html = '<li class="image" id="img-'+img_count+'"> <img src="'+imageUrl+'"> <ul class="actions"><li><a href="#" data-id="img-'+img_count+'" class="delete" title="Xóa ảnh"><i class="fa fa-fw fa-times-circle"></i></a></li></ul> </li>';
+            var html = '<li class="image" id="img-'+img_count+'"><div><img src="'+imageUrl+'"> <ul class="actions"><li><a href="#" data-id="img-'+img_count+'" class="delete" title="Xóa ảnh"><i class="fa fa-fw fa-times-circle"></i></a></li></ul> </div></li>';
             $('#product_gallery_images').append(html);
 
             $('#product_gallery_images .actions .delete').on('click', function (event) {
@@ -98,6 +98,15 @@ $(document).ready(function () {
     $('#product_gallery_images .actions .delete').on('click', function (event) {
         event.preventDefault();
         $(this).parent().remove();
+    });
+
+    $('#remove-post-thumbnail').on('click', function (e) {
+        e.preventDefault();
+
+        $(this).parent().css('display', 'none');
+        $('#prod-thumbnail').css('display', 'none');
+        $('#set-post-thumbnail-desc').css('display', 'none');
+        $('#btn-add-prod-thumbnail').css('display', 'block');
     });
 });
 
